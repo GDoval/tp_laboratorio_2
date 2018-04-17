@@ -41,6 +41,13 @@ namespace Calculadora_de_Gaston_Doval_2ºA
             this.Close();
         }
         
+        /// <summary>
+        /// Realiza la operacion matematica correspondiente al operador que se pasa como parametro
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         private static double Operar(string num1, string num2, string operador)
         {
             Calculadora calcu = new Calculadora();
@@ -56,7 +63,7 @@ namespace Calculadora_de_Gaston_Doval_2ºA
         {
             string num = this.lblResultado.Text;
             int pe = Numero.BinarioDecimal(num);
-            //this.lblResultado.Text = Convert.ToString(Numero.BinarioDecimal(num));
+            this.lblResultado.Text = Convert.ToString(Numero.BinarioDecimal(num));
         }
 
         private void btnDecimalABinario_Click(object sender, EventArgs e)

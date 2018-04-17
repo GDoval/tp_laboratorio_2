@@ -11,6 +11,11 @@ namespace Calculadora_de_Gaston_Doval_2ºA
         //Funciones   
 
 
+        /// <summary>
+        /// Valida cuál fue el operador que se ingresó. Si recibe null (el ComboBox en blanco) devuelve un "+"
+        /// </summary>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         private static string ValidarOperador(string operador)
         {
             string resp = "+";
@@ -115,6 +120,7 @@ namespace Calculadora_de_Gaston_Doval_2ºA
             return resp = 0;
         }
 
+        //Sobrecarga de operadores para poder realizar operaciones sobre dos objetos de tipo Numero
 
         public static double operator +(Numero num1, Numero num2)
         {
@@ -140,19 +146,11 @@ namespace Calculadora_de_Gaston_Doval_2ºA
             return resp;
         }
 
-        public static string DecimalBinario(double num)
-        {
-            string resp = "";
-            while (num > 1)
-            {
-                double resto = num % 2;
-                resp = Convert.ToString(resto) + resp;
-                num /= 2;
-            }
-            resp = Convert.ToString(num) + resp;
-            return resp;
-        }
-
+        /// <summary>
+        /// Pasa un numero en formato decimal a binario
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
         public static string DecimalBinario(int num)
         {
             string resp = "";
@@ -166,6 +164,12 @@ namespace Calculadora_de_Gaston_Doval_2ºA
             return resp;
         }
 
+
+        /// <summary>
+        /// Pasa un numero en formato decimal a formato decimal
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
         public static int BinarioDecimal(string num)
         {
             int resp = Convert.ToInt32(num,2);
