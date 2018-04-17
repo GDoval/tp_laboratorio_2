@@ -1,0 +1,9 @@
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\bin\Debug\Calculadora de Gaston Doval 2ºA.exe.config
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\obj\Debug\Calculadora de Gaston Doval 2ºA.csprojResolveAssemblyReference.cache
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\obj\Debug\Calculadora_de_Gaston_Doval_2ºA.Properties.Resources.resources
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\obj\Debug\Calculadora de Gaston Doval 2ºA.csproj.GenerateResource.Cache
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\bin\Debug\Calculadora de Gaston Doval 2ºA.exe
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\bin\Debug\Calculadora de Gaston Doval 2ºA.pdb
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\obj\Debug\Calculadora de Gaston Doval 2ºA.exe
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\obj\Debug\Calculadora de Gaston Doval 2ºA.pdb
+C:\Users\jsarasola\Desktop\tp_laboratorio_2\TP Nº 1\Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA\obj\Debug\Calculadora_de_Gaston_Doval_2ºA.LaCalculadora.resources
