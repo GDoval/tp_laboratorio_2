@@ -1,0 +1,10 @@
+C:\Users\Gaston\Documents\CosasGit\Prueba_TP2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\Prueba_TP2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\Prueba_TP2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\Prueba_TP2\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\Prueba_TP2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Entidades\obj\Debug\Entidades.pdb
