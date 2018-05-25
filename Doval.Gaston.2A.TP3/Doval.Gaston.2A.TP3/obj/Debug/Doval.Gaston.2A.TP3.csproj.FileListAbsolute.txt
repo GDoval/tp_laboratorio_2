@@ -6,3 +6,11 @@ C:\Users\gdoval\Desktop\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\bin\Debug\Proyec
 C:\Users\gdoval\Desktop\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\obj\Debug\Doval.Gaston.2A.TP3.csprojResolveAssemblyReference.cache
 C:\Users\gdoval\Desktop\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\obj\Debug\Doval.Gaston.2A.TP3.exe
 C:\Users\gdoval\Desktop\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\obj\Debug\Doval.Gaston.2A.TP3.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\bin\Debug\Doval.Gaston.2A.TP3.exe.config
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\obj\Debug\Doval.Gaston.2A.TP3.exe
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\obj\Debug\Doval.Gaston.2A.TP3.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\obj\Debug\Doval.Gaston.2A.TP3.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\bin\Debug\Doval.Gaston.2A.TP3.exe
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\bin\Debug\Doval.Gaston.2A.TP3.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\bin\Debug\Proyecto.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Doval.Gaston.2A.TP3\bin\Debug\Proyecto.pdb

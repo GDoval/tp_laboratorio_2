@@ -22,78 +22,130 @@ namespace ClasesAbstractas
         #endregion
 
         #region Propiedades
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string Nombre { get { return this._nombre; } set { this._nombre = this.ValidarNombreApellido(value); } }
+        public string Apellido { get { return this._apellido; } set { this._apellido = this.ValidarNombreApellido(value);} }
+        public ENacionalidad Nacionalidad { get { return this._nacionalidad; } set { this._nacionalidad = value; } }
+
+        /// <summary>
+        /// Setea el atributo _dni despues de validar si está en rango según la nacionalidad de la instacia
+        /// </summary>
         public int Dni
         {
             set
             {
-                bool valida = true;
+                int dni = 0;
                 try
                 {
-                    this.ValidarDni(this.Nacionalidad, value);
+                    dni = this.ValidarDni(this.Nacionalidad, value);
                 }
-                catch (DniInvalidoException e)
+                catch (NacionalidadInvalidaException e)
                 {
                     Console.Write(e.Message);
-                    Console.ReadLine();
-                    valida = false;
                 }
-                if (valida)
-                    this._dni = value;
-                else
-                    this._dni = -1;
+                catch (DniInvalidoException b)
+                {
+                    Console.WriteLine(b.Message);
+                }
+                this._dni = dni;
             }
             get { return this._dni; }
         }
-        public ENacionalidad Nacionalidad { get; set; }
-
-
+      
+        /// <summary>
+        /// Setea el atributo _dni después de validar si se puede parsear el string a int y de validar si está dentro del rango adecuado
+        /// </summary>
         public string StringToDNI 
         {
             set
             {
-                
-                this.Dni = value;
+                int dni = 0;
+                try
+                { dni = this.ValidarDni(this.Nacionalidad, value); }
+                catch (NacionalidadInvalidaException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                catch (DniInvalidoException b)
+                {
+                    Console.WriteLine(b.Message);
+                }
+                this._dni = dni;
             }
         }
         #endregion
 
         #region Constructores
         public Persona()
+            :this("","",0,ENacionalidad.Argentina)
         { }
 
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
-        { }
+        {
+            this._apellido = apellido;
+            this._nombre = nombre;
+            this._nacionalidad = nacionalidad;
+        }
 
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
-        { }
+            :this(nombre, apellido, nacionalidad)
+        {
+            this.Dni = dni;
+        }
 
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
-        { }
+            :this(nombre, apellido, nacionalidad)
+        {
+            this.StringToDNI = dni;
+        }
         #endregion
 
         #region Metodos
+        
+        
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder sb = new StringBuilder();
+            sb.Append("NOMBRE COMPLETO: ");
+            sb.AppendLine(this.Apellido + "," + this.Nombre);
+            sb.Append("NACIONALIDAD: ");
+            sb.AppendLine(this.Nacionalidad.ToString());
+            sb.Append("DNI: ");
+            sb.AppendLine(Convert.ToString(this.Dni));
+            return sb.ToString();
         }
-
+        /// <summary>
+        /// Valida que el entero pasado como parametro esté dentro de los rangos correspondientes para cada instancia del enum ENacionalidad
+        /// </summary>
+        /// <param name="nacionalidad">Criterio a partir del cual se valida el numero entero</param>
+        /// <param name="dato">Entero a validar</param>
+        /// <returns></returns>
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
-            int resp = 0;
-            if (nacionalidad == ENacionalidad.Argentina && dato > 1 && dato < 90000000)
-                resp = dato;
-            else
-                throw new DniInvalidoException("DNI invalido para un argentino");
-            if (nacionalidad == ENacionalidad.Extranjero && dato > 89999999)
-                resp = dato;
-            else
-                throw new DniInvalidoException("DNI invalido para un extranjero");
+            int resp = -1;
+            switch (nacionalidad)
+            {
+                case ENacionalidad.Argentina:
+                    if (dato >= 1 && dato < 90000000)
+                        resp = dato;
+                    else
+                        throw new NacionalidadInvalidaException("DNI invalido para un argentino");
+                    break;
+                case ENacionalidad.Extranjero:
+                    if (dato > 89999999)
+                        resp = dato;
+                    else
+                        throw new NacionalidadInvalidaException("DNI invalido para un extranjero");
+                    break;
+            }
             return resp;
-
         }
 
+        /// <summary>
+        /// Valida que el string que se pasa como parametro se pueda parsear a INT. Devuelve -1 si no pudo
+        /// </summary>
+        /// <param name="nacionalidad">Criterio a partir del cual se valida la cadena recibida</param>
+        /// <param name="dato">Cadena a validar</param>
+        /// <returns></returns>
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int dni = -1;
@@ -105,8 +157,19 @@ namespace ClasesAbstractas
             return dni;
         }
 
-        private string ValidarNombreApellido(string dato)
-        { return ""; }
+        /// <summary>
+        /// Corrobora que la cadena pasada como parametro tenga sólo letras. De no ser así, devuelve una cadena vacía
+        /// </summary>
+        /// <param name="dato">Cadena a validar</param>
+        /// <returns></returns>
+        public string ValidarNombreApellido(string dato)
+        {
+            bool resp = dato.All(Char.IsLetter);
+            if (resp)
+                return dato;
+            else
+                return dato = "";
+        }
         #endregion
 
     }
