@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
 
-namespace ClasesAbstractas
+namespace EntidadesAbstractas
 {
-    public  class Persona
+    public abstract class Persona
     {
         public enum ENacionalidad
         {
