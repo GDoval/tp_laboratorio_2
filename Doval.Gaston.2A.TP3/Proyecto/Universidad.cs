@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EntidadesAbstractas;
-using Excepciones;
-using ClasesInstanciables;
 
-namespace Doval.Gaston._2A.TP3
+namespace ClasesInstanciables
 {
-    class Program
+    public class Universidad
     {
-        static void Main(string[] args)
+        public enum EClases
         {
-
+            Programacion, Laboratorio, Legislacion, SPD
         }
     }
 }
