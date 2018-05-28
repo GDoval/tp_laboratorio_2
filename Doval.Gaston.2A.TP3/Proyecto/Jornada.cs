@@ -44,6 +44,8 @@ namespace ClasesInstanciables
         public string Leer()
         { return ""; }
 
+
+        
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -63,13 +65,32 @@ namespace ClasesInstanciables
 
         #region Sobrecarga de Operadores
         public static bool operator ==(Jornada j, Alumno a)
-        { return false; }
+        {
+            bool resp = false;
+            foreach (Alumno al in j.Alumnos)
+            {
+                if (al == a)
+                {
+                    resp = true;
+                    break;
+                }
+            }
+            return resp;
+        }
 
         public static bool operator !=(Jornada j, Alumno a)
         { return !(j == a); }
 
         public static Jornada operator +(Jornada j, Alumno a)
-        { return j; }
+        {
+            if (j == a)
+            {
+                return j;
+            }
+            else
+                j.Alumnos.Add(a);
+            return j;
+        }
         #endregion
 
     }
