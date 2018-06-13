@@ -1,0 +1,5 @@
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\Entidades\obj\Debug\Entidades.pdb

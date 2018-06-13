@@ -14,3 +14,6 @@ C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Prueb
 C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Prueba_TP2\bin\Debug\Entidades.dll
 C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Prueba_TP2\bin\Debug\Entidades.pdb
 C:\Users\Gaston\Documents\CosasGit\Programacion-II\Doval.Gaston\Prueba_TP2\Prueba_TP2\obj\Debug\Prueba_TP2.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TPN°2\Prueba_TP2\bin\Debug\Prueba_TP2.exe.config
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TPN°2\Prueba_TP2\obj\Debug\Prueba_TP2.exe
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TPN°2\Prueba_TP2\obj\Debug\Prueba_TP2.pdb
