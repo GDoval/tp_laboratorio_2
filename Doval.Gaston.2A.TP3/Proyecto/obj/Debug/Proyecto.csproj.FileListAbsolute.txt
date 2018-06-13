@@ -8,3 +8,8 @@ C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto
 C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
 C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\obj\Debug\Proyecto.dll
 C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\bin\Debug\Proyecto.dll
+C:\Users\gdoval\Desktop\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\gdoval\Desktop\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\gdoval\Desktop\tp_laboratorio_2\Doval.Gaston.2A.TP3\Proyecto\obj\Debug\Proyecto.pdb
