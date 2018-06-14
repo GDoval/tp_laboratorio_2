@@ -5,3 +5,14 @@ C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorre
 C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.csproj.GenerateResource.Cache
 C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.exe
 C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\MainCorreo.exe.config
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.exe
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\MainCorreo.exe
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\MainCorreo.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.csprojResolveAssemblyReference.cache
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.Properties.Resources.resources
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.csproj.GenerateResource.Cache
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\Entidades.dll
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\Entidades.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.Form1.resources

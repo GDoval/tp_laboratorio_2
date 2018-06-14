@@ -9,14 +9,31 @@ namespace Entidades
 {
     public static class PaqueteDAO
     {
-
-        //private SqlCommand comando;
-        //private SqlConnection conexion;
+        private static SqlCommand comando;
+        private static SqlConnection conexion; 
         
         static PaqueteDAO()
-        { }
+        {
+            conexion = new SqlConnection(Properties.Settings.Default.Conexion);
+        }
 
         public static bool Insertar(Paquete p)
-        { return false; }
+        {
+            bool resp = true;
+            try
+            {
+                conexion.Open();
+                comando = new SqlCommand("INSERT INTO Paquetes (direccionEntrega, trackingID, alumno) VALUES(' " + p.DireccionEntrega + "','" + p.TrackingID + "','Gaston Doval')", conexion);
+                comando.ExecuteNonQuery();
+                conexion.Close();
+            }
+            catch (Exception e)
+            {
+                resp = false;   
+                throw  e;
+            }
+
+            return resp; 
+        }
     }
 }

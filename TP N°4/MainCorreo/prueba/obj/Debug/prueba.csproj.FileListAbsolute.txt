@@ -1,0 +1,8 @@
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\prueba.exe.config
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\prueba.exe
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\prueba.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\Entidades.dll
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\Entidades.pdb
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.csprojResolveAssemblyReference.cache
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.exe
+C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.pdb

@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Entidades
 {
-    public class Correo : IMostrar<Paquete>
+    public class Correo : IMostrar<List<Paquete>>
     {
 
         private List<Thread> mockPaquetes;
@@ -26,5 +26,10 @@ namespace Entidades
         public static Correo operator +(Correo c, Paquete p)
         { return c; }
 
+
+        public string MostrarDatos(IMostrar<List<Paquete>> elemento)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

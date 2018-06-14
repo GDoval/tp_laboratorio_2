@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Entidades
 {
+    //Delegado
+    public delegate void DelegadoEstado(object sender, EventArgs e);
+
     public class Paquete : IMostrar<Paquete>
     {
         public enum EEstado
@@ -16,6 +20,9 @@ namespace Entidades
         private string direccionEntrega;
         private EEstado estado;
         private string trackingID;
+
+        //Evento
+        public event DelegadoEstado InformaEstado;
 
         #region Constructores
 
@@ -39,14 +46,28 @@ namespace Entidades
         #region Metodos
 
         public string MostrarDatos(IMostrar<Paquete> elemento)
-        { return ""; }
+        {
+            string resp = "";
+            Paquete p = (Paquete) elemento;
+            resp = String.Format("{0} para {1}", p.TrackingID, p.DireccionEntrega);
+            return resp; 
+        } 
 
         public void MockCicloDeVida()
-        { }
+        {
+            while (this.Estado != EEstado.Entregado)
+            {
+                Thread.Sleep(10000);
+                this.Estado += 1;
+                this.InformaEstado(this, new EventArgs());
+            }
+                
+
+        }
 
         public override string ToString()
         {
-            return base.ToString();
+            return this.MostrarDatos(this);
         }
         #endregion
 
