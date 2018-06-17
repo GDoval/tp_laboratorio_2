@@ -6,3 +6,11 @@ C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\Ent
 C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.csprojResolveAssemblyReference.cache
 C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.exe
 C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\prueba.exe.config
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.exe
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\prueba.exe
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\prueba.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\prueba\obj\Debug\prueba.csprojResolveAssemblyReference.cache

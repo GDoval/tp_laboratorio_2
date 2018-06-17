@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-
+using System.Data;
 namespace Entidades
 {
     public static class PaqueteDAO
@@ -29,10 +29,14 @@ namespace Entidades
             }
             catch (Exception e)
             {
-                resp = false;   
-                throw  e;
+                resp = false;
+                throw e;
             }
-
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
             return resp; 
         }
     }

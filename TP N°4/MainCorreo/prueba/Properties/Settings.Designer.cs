@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entidades.Properties {
+namespace prueba.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

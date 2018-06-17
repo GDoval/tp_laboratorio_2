@@ -1,6 +1,6 @@
 ﻿namespace MainCorreo
 {
-    partial class Form1
+    partial class FrmPpal
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -19,7 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
         #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
@@ -30,21 +29,26 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lstEstadoEntregado = new System.Windows.Forms.ListBox();
+            this.lstEstadoEnViaje = new System.Windows.Forms.ListBox();
+            this.lstEstadoIngresado = new System.Windows.Forms.ListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnMostrarTodos = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.mtxTrackingID = new System.Windows.Forms.MaskedTextBox();
+            this.rtbMostrar = new System.Windows.Forms.RichTextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsListas = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mostrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            this.cmsListas.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -52,115 +56,15 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.listBox3);
-            this.groupBox1.Controls.Add(this.listBox2);
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.lstEstadoEntregado);
+            this.groupBox1.Controls.Add(this.lstEstadoEnViaje);
+            this.groupBox1.Controls.Add(this.lstEstadoIngresado);
             this.groupBox1.Location = new System.Drawing.Point(17, 19);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(576, 257);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estado Paquetes";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(23, 46);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(155, 173);
-            this.listBox1.TabIndex = 0;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(211, 46);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(155, 173);
-            this.listBox2.TabIndex = 1;
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(401, 46);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(155, 173);
-            this.listBox3.TabIndex = 2;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.maskedTextBox1);
-            this.groupBox2.Location = new System.Drawing.Point(401, 295);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(192, 94);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Paquete";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(21, 291);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(341, 97);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(6, 19);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(103, 20);
-            this.maskedTextBox1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(103, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(122, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 32);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(122, 56);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 32);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Mostrar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Ingresado";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "En viaje";
             // 
             // label3
             // 
@@ -171,20 +75,146 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Entregado";
             // 
-            // Form1
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(208, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "En viaje";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Ingresado";
+            // 
+            // lstEstadoEntregado
+            // 
+            this.lstEstadoEntregado.FormattingEnabled = true;
+            this.lstEstadoEntregado.Location = new System.Drawing.Point(390, 46);
+            this.lstEstadoEntregado.Name = "lstEstadoEntregado";
+            this.lstEstadoEntregado.Size = new System.Drawing.Size(155, 173);
+            this.lstEstadoEntregado.TabIndex = 2;
+            // 
+            // lstEstadoEnViaje
+            // 
+            this.lstEstadoEnViaje.FormattingEnabled = true;
+            this.lstEstadoEnViaje.Location = new System.Drawing.Point(211, 46);
+            this.lstEstadoEnViaje.Name = "lstEstadoEnViaje";
+            this.lstEstadoEnViaje.Size = new System.Drawing.Size(155, 173);
+            this.lstEstadoEnViaje.TabIndex = 1;
+            // 
+            // lstEstadoIngresado
+            // 
+            this.lstEstadoIngresado.FormattingEnabled = true;
+            this.lstEstadoIngresado.Location = new System.Drawing.Point(23, 46);
+            this.lstEstadoIngresado.Name = "lstEstadoIngresado";
+            this.lstEstadoIngresado.Size = new System.Drawing.Size(155, 173);
+            this.lstEstadoIngresado.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnMostrarTodos);
+            this.groupBox2.Controls.Add(this.btnAgregar);
+            this.groupBox2.Controls.Add(this.txtDireccion);
+            this.groupBox2.Controls.Add(this.mtxTrackingID);
+            this.groupBox2.Location = new System.Drawing.Point(401, 295);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(192, 94);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Paquete";
+            // 
+            // btnMostrarTodos
+            // 
+            this.btnMostrarTodos.Location = new System.Drawing.Point(122, 56);
+            this.btnMostrarTodos.Name = "btnMostrarTodos";
+            this.btnMostrarTodos.Size = new System.Drawing.Size(64, 32);
+            this.btnMostrarTodos.TabIndex = 3;
+            this.btnMostrarTodos.Text = "Mostrar";
+            this.btnMostrarTodos.UseVisualStyleBackColor = true;
+            this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(122, 12);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(64, 32);
+            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(6, 63);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(103, 20);
+            this.txtDireccion.TabIndex = 1;
+            // 
+            // mtxTrackingID
+            // 
+            this.mtxTrackingID.Location = new System.Drawing.Point(6, 19);
+            this.mtxTrackingID.Name = "mtxTrackingID";
+            this.mtxTrackingID.Size = new System.Drawing.Size(103, 20);
+            this.mtxTrackingID.TabIndex = 0;
+            // 
+            // rtbMostrar
+            // 
+            this.rtbMostrar.Location = new System.Drawing.Point(21, 291);
+            this.rtbMostrar.Name = "rtbMostrar";
+            this.rtbMostrar.Size = new System.Drawing.Size(341, 97);
+            this.rtbMostrar.TabIndex = 5;
+            this.rtbMostrar.Text = "";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mostrarToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(116, 26);
+            // 
+            // mostrarToolStripMenuItem
+            // 
+            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.mostrarToolStripMenuItem.Text = "Mostrar";
+            // 
+            // cmsListas
+            // 
+            this.cmsListas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mostrarToolStripMenuItem1});
+            this.cmsListas.Name = "contextMenuStrip2";
+            this.cmsListas.Size = new System.Drawing.Size(116, 26);
+            // 
+            // mostrarToolStripMenuItem1
+            // 
+            this.mostrarToolStripMenuItem1.Name = "mostrarToolStripMenuItem1";
+            this.mostrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.mostrarToolStripMenuItem1.Text = "Mostrar";
+            this.mostrarToolStripMenuItem1.Click += new System.EventHandler(this.mostrarToolStripMenuItem1_Click);
+            // 
+            // FrmPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 410);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbMostrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmPpal";
+            this.Text = "Correo  UTN Gaston.Doval.2A";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.cmsListas.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -192,19 +222,22 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ListBox lstEstadoEntregado;
+        private System.Windows.Forms.ListBox lstEstadoEnViaje;
+        private System.Windows.Forms.ListBox lstEstadoIngresado;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnMostrarTodos;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.MaskedTextBox mtxTrackingID;
+        private System.Windows.Forms.RichTextBox rtbMostrar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsListas;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem1;
     }
 }
 

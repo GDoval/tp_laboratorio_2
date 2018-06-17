@@ -16,3 +16,7 @@ C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug
 C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\Entidades.dll
 C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\Entidades.pdb
 C:\Users\gdoval\Desktop\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.Form1.resources
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\MainCorreo\obj\Debug\MainCorreo.FrmPpal.resources

@@ -7,8 +7,6 @@ using System.Threading;
 
 namespace Entidades
 {
-    //Delegado
-    public delegate void DelegadoEstado(object sender, EventArgs e);
 
     public class Paquete : IMostrar<Paquete>
     {
@@ -21,6 +19,8 @@ namespace Entidades
         private EEstado estado;
         private string trackingID;
 
+        //Delegado
+        public delegate void DelegadoEstado(object sender, EventArgs e);
         //Evento
         public event DelegadoEstado InformaEstado;
 
@@ -51,7 +51,7 @@ namespace Entidades
             Paquete p = (Paquete) elemento;
             resp = String.Format("{0} para {1}", p.TrackingID, p.DireccionEntrega);
             return resp; 
-        } 
+        }
 
         public void MockCicloDeVida()
         {
@@ -61,8 +61,14 @@ namespace Entidades
                 this.Estado += 1;
                 this.InformaEstado(this, new EventArgs());
             }
-                
-
+            try
+            {
+                PaqueteDAO.Insertar(this);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public override string ToString()

@@ -7,14 +7,100 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
+using Entidades;
 namespace MainCorreo
 {
-    public partial class Form1 : Form
+    public partial class FrmPpal : Form
     {
-        public Form1()
+
+        private Correo correo; 
+        
+        public FrmPpal()
         {
             InitializeComponent();
+            this.correo = new Correo();
         }
+
+        #region Métodos
+
+        private void ActualizarEstados()
+        {
+            this.lstEstadoEntregado.Items.Clear();
+            this.lstEstadoEnViaje.Items.Clear();
+            this.lstEstadoIngresado.Items.Clear();
+
+            foreach (Paquete p in this.correo.Paquetes)
+            {
+                switch (p.Estado)
+                {
+                    case Paquete.EEstado.Entregado:
+                        this.lstEstadoEntregado.Items.Add(p);
+                        break;
+                    case Paquete.EEstado.EnViaje:
+                        this.lstEstadoEnViaje.Items.Add(p);
+                        break;
+                    case Paquete.EEstado.Ingresado:
+                        this.lstEstadoIngresado.Items.Add(p);
+                        break;
+                }
+            }
+
+        }
+
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+            Paquete paq = new Paquete(this.txtDireccion.Text, this.mtxTrackingID.Text);
+            EventArgs info = new EventArgs();
+            paq.InformaEstado += new Paquete.DelegadoEstado(this.paq_InformaEstado);
+            try
+            {
+                this.correo += paq;
+            }
+            catch (TrackingIDRepetidoException error)
+            {
+                MessageBox.Show(error.Message, "ID repetido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            catch (Exception generic)
+            {
+                MessageBox.Show(generic.Message, "Base de datos error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            this.ActualizarEstados();
+        }
+
+
+        private void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
+        }
+
+        private void MostrarInformacion<T>(IMostrar<T> elemento)
+        {
+
+        }
+
+        private void paq_InformaEstado(object sender, EventArgs e)
+        {
+            if (this.InvokeRequired)
+            {
+                Paquete.DelegadoEstado d = new Paquete.DelegadoEstado(paq_InformaEstado);
+                this.Invoke(d, new object[] { sender, e });
+            }
+            else
+            {
+                this.ActualizarEstados();
+            }
+        }
+
+        #endregion
+
+        private void mostrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
+        }
+
+
+
     }
 }
