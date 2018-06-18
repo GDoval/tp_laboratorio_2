@@ -70,14 +70,14 @@ namespace MainCorreo
         }
 
 
-        private void btnMostrarTodos_Click(object sender, EventArgs e)
-        {
-            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
-        }
+
 
         private void MostrarInformacion<T>(IMostrar<T> elemento)
         {
-
+            if (elemento != null)
+            {
+                this.rtbMostrar.Text = elemento.MostrarDatos(elemento);
+            }
         }
 
         private void paq_InformaEstado(object sender, EventArgs e)
@@ -100,7 +100,10 @@ namespace MainCorreo
             this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
         }
 
-
+        private void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
+        }
 
     }
 }
