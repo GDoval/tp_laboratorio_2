@@ -68,7 +68,6 @@ namespace Entidades
             }
             catch (System.Data.SqlClient.SqlException e)
             {
-             
             }
         }
 

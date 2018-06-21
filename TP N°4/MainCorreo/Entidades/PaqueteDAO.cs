@@ -39,7 +39,10 @@ namespace Entidades
             }
             return resp; 
         }
-
+        /// <summary>
+        /// Metodo para testear la conexion a la base de datos antes de arrancar un nuevo hilo
+        /// </summary>
+        /// <returns></returns>
         public static bool TestearConexion()
         {
             bool resp = true;
