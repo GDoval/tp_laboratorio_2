@@ -43,12 +43,9 @@
             this.rtbMostrar = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsListas = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.mostrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            this.cmsListas.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -59,7 +56,7 @@
             this.groupBox1.Controls.Add(this.lstEstadoEntregado);
             this.groupBox1.Controls.Add(this.lstEstadoEnViaje);
             this.groupBox1.Controls.Add(this.lstEstadoIngresado);
-            this.groupBox1.Location = new System.Drawing.Point(17, 19);
+            this.groupBox1.Location = new System.Drawing.Point(17, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(576, 257);
             this.groupBox1.TabIndex = 0;
@@ -95,6 +92,7 @@
             // 
             // lstEstadoEntregado
             // 
+            this.lstEstadoEntregado.ContextMenuStrip = this.contextMenuStrip1;
             this.lstEstadoEntregado.FormattingEnabled = true;
             this.lstEstadoEntregado.Location = new System.Drawing.Point(390, 46);
             this.lstEstadoEntregado.Name = "lstEstadoEntregado";
@@ -182,22 +180,9 @@
             // mostrarToolStripMenuItem
             // 
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mostrarToolStripMenuItem.Text = "Mostrar";
-            // 
-            // cmsListas
-            // 
-            this.cmsListas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mostrarToolStripMenuItem1});
-            this.cmsListas.Name = "contextMenuStrip2";
-            this.cmsListas.Size = new System.Drawing.Size(116, 26);
-            // 
-            // mostrarToolStripMenuItem1
-            // 
-            this.mostrarToolStripMenuItem1.Name = "mostrarToolStripMenuItem1";
-            this.mostrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.mostrarToolStripMenuItem1.Text = "Mostrar";
-            this.mostrarToolStripMenuItem1.Click += new System.EventHandler(this.mostrarToolStripMenuItem1_Click);
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
             // FrmPpal
             // 
@@ -214,7 +199,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.cmsListas.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -236,8 +220,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip cmsListas;
-        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem1;
     }
 }
 

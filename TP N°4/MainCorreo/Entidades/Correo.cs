@@ -29,6 +29,7 @@ namespace Entidades
                     t.Abort();
         }
 
+
         public static Correo operator +(Correo c, Paquete p)
         {
             foreach (Paquete paq in c.Paquetes)

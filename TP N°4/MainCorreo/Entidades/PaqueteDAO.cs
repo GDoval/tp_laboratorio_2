@@ -27,7 +27,7 @@ namespace Entidades
                 comando.ExecuteNonQuery();
                 conexion.Close();
             }
-            catch (Exception e)
+            catch (System.Data.SqlClient.SqlException  e)
             {
                 resp = false;
                 throw e;

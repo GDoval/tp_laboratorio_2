@@ -53,6 +53,7 @@ namespace MainCorreo
             Paquete paq = new Paquete(this.txtDireccion.Text, this.mtxTrackingID.Text);
             EventArgs info = new EventArgs();
             paq.InformaEstado += new Paquete.DelegadoEstado(this.paq_InformaEstado);
+            string errorDB;
             try
             {
                 this.correo += paq;
@@ -62,13 +63,14 @@ namespace MainCorreo
                 MessageBox.Show(error.Message, "ID repetido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
-            catch (Exception generic)
+            catch (System.Data.SqlClient.SqlException excep)
             {
-                MessageBox.Show(generic.Message, "Base de datos error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorDB = "No fue posible guardar el archivo en la base de datos: " + excep.Message;
+                MessageBox.Show(errorDB, "Error conectando a la Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             this.ActualizarEstados();
         }
-
+        
 
 
 
@@ -103,7 +105,41 @@ namespace MainCorreo
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
+            string texto = this.rtbMostrar.Text;
+            try
+            {
+                texto.Guardar("salida.txt");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            switch (MessageBox.Show(this, "¿Desea salir?", "Cerrando", MessageBoxButtons.YesNo))
+            {
+                case DialogResult.No:
+                    e.Cancel = true;
+                    break;
+                default:
+                    this.correo.FinEntregas();
+                    break;
+            }
+        }
+
+        private void mostrarToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
+        }
+
 
     }
 }

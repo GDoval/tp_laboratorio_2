@@ -53,6 +53,7 @@ namespace Entidades
             return resp; 
         }
 
+        
         public void MockCicloDeVida()
         {
             while (this.Estado != EEstado.Entregado)
@@ -63,11 +64,12 @@ namespace Entidades
             }
             try
             {
+               
                 PaqueteDAO.Insertar(this);
             }
-            catch (Exception e)
+            catch (System.Data.SqlClient.SqlException e)
             {
-                throw e;
+             
             }
         }
 
