@@ -106,9 +106,10 @@ namespace MainCorreo
         {
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
             string texto = this.rtbMostrar.Text;
+            string path = Environment.GetFolderPath(System.Environment.SpecialFolder.DesktopDirectory);
             try
             {
-                texto.Guardar("salida.txt");
+                texto.Guardar(path);
             }
             catch (Exception ex)
             {
