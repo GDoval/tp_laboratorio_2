@@ -64,7 +64,6 @@ namespace Entidades
             }
             try
             {
-               
                 PaqueteDAO.Insertar(this);
             }
             catch (System.Data.SqlClient.SqlException e)

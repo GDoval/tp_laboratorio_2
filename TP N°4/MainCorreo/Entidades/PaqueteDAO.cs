@@ -39,5 +39,21 @@ namespace Entidades
             }
             return resp; 
         }
+
+        public static bool TestearConexion()
+        {
+            bool resp = true;
+            try
+            {
+                conexion.Open();
+                conexion.Close();
+            }
+            catch(System.Data.SqlClient.SqlException  e)
+            {
+                resp = false;
+                throw e;
+            }
+            return resp;
+        }
     }
 }

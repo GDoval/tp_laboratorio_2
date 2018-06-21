@@ -37,6 +37,14 @@ namespace Entidades
                 if (paq == p)
                     throw new TrackingIDRepetidoException("El paquete ya se encuentra cargado en la base de datos");
             }
+            try
+            {
+                PaqueteDAO.TestearConexion();
+            }
+            catch (System.Data.SqlClient.SqlException e)
+            {
+                throw e;
+            }
             c.Paquetes.Add(p);
             Thread hilo = new Thread(p.MockCicloDeVida);
             hilo.Start();
