@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora de Gaston Doval 2ºA", "Calculadora de Gaston Doval 2ºA\Calculadora de Gaston Doval 2ºA.csproj", "{410DE2FE-9316-436B-8957-576824B31CD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{E1A079FD-09FE-44A1-9BF2-1254EE1EC0A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{410DE2FE-9316-436B-8957-576824B31CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410DE2FE-9316-436B-8957-576824B31CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410DE2FE-9316-436B-8957-576824B31CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410DE2FE-9316-436B-8957-576824B31CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A079FD-09FE-44A1-9BF2-1254EE1EC0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A079FD-09FE-44A1-9BF2-1254EE1EC0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A079FD-09FE-44A1-9BF2-1254EE1EC0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A079FD-09FE-44A1-9BF2-1254EE1EC0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

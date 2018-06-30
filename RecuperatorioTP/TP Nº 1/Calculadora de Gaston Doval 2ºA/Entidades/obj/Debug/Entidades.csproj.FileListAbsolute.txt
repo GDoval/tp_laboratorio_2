@@ -1,0 +1,5 @@
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\RecuperatorioTP\TP Nº 1\Calculadora de Gaston Doval 2ºA\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\RecuperatorioTP\TP Nº 1\Calculadora de Gaston Doval 2ºA\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\RecuperatorioTP\TP Nº 1\Calculadora de Gaston Doval 2ºA\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\RecuperatorioTP\TP Nº 1\Calculadora de Gaston Doval 2ºA\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\RecuperatorioTP\TP Nº 1\Calculadora de Gaston Doval 2ºA\Entidades\obj\Debug\Entidades.pdb

@@ -1,0 +1,9 @@
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\bin\Debug\TestUnitario.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\bin\Debug\TestUnitario.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\bin\Debug\Entidades.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\bin\Debug\MainCorreo.exe
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\bin\Debug\Entidades.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\bin\Debug\MainCorreo.pdb
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\obj\Debug\TestUnitario.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\obj\Debug\TestUnitario.dll
+C:\Users\Gaston\Documents\CosasGit\tp_laboratorio_2\TP N°4\MainCorreo\TestUnitario\obj\Debug\TestUnitario.pdb
